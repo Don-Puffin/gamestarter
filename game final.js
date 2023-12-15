@@ -314,7 +314,7 @@ const introImage = new Image ('introimage.png')
 
 //create the indiviual room objects and add their descriptions
 const Intro = new Room ('intro')
-Intro.description = "You are a time traveller, but you've zip-zapped about too much and overheated your time machine.<br/> The resulting explosion ejected your time crystal and now you're trapped in Edo period Japan. </br><b> It's the year 1620</b>. </br> The time crystal was captured by a Daimyo who believes it will bring him power. <br/> Scans suggest the time crystal is inside a nearby castle. You must <b>retrieve the crystal</b> to get home! <br/><br/>Enter <b>START</b> to begin"
+Intro.description = "You are a time traveller, but you've zip-zapped about too much and overheated your time machine.<br/> The resulting explosion ejected your time crystal and now you're trapped in Edo period Japan. </br><b> It's the year 1620</b>. </br> The time crystal was captured by a Daimyo who believes it will bring him power. <br/> Scans suggest the time crystal is inside a nearby castle. You must <b>retrieve the crystal</b> to get home! <br/><br/> <b> Controls:</b> </br> <b>Move:</b> 'north', 'south', 'east', 'west', 'upstairs'<br/><b>Items:</b> 'Take/Use (item)'<br/><br/>Enter <b>START</b> to begin"
 Intro.roomImage = introImage
 const Teien= new Room("garden");
 Teien.description = "You see a wide and beautiful garden with a white stone path leading to the castle gate.</br> The crystal may be inside!";

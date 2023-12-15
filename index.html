@@ -10,35 +10,39 @@
     <!--Custom css-->
   </head>
   <body background="background.webp" class="bg-repeat md:bg-repeat">
-    <br/><br/>
-    <div class="container w-3/6 place-items-center">
+    <div class="container mx-auto">
       <div id="gamearea">
         <div id="details">
           <main>
             <header>
               <div class="dark:text-white"></div>
             </header>
-            <!-- content -->
-            <div class="item-body rounded drop-shadow-md py-4 bg-gradient-to-t from-cyan-600 to-blue-900 flex flex-col mx-auto md:ml-40 md:mr-40 grid grid-rows-3 md:grid-rows-1 place-items-center">
-              <p class="self-center drop-shadow-xl text-4xl font-bold whitespace-nowrap bg-white rounded-md px-2">Edoventure</p>
-              <br/>
-              <div class="grid grid-cols-1 md:grid-cols- gap-4">
-                <div class="mx-autor" id="roomImageContainer"></div>
+            
+            <!-- Content -->
+            <div class="item-body mx-auto bg-gradient-to-t from-cyan-600 to-blue-900 rounded-md p-2 md:p-4 shadow-md">
+              <p class="self-center text-center text-4xl font-bold whitespace-nowrap bg-white rounded-md px-2 mb-4">Edoventure</p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
+                <div class="mx-auto" id="roomImageContainer"></div>
+                
                 <div class="text-center">
                   <p id="textarea" class="bg-white rounded-md px-2 mb-4"></p>
                   <div id="interaction" class="bg-yellow-500 rounded-md px-2 mb-4"></div>
-                  <br/>
-                  <input type="text" id="usertext" class="mb-4" />
+                  <input type="text" id="usertext" class="mb-4 p-2 rounded-md">
                 </div>
               </div>
             </div>
+            
           </main>
         </div>
       </div>
     </div>
-    <!-- link to external JavaScript-->
+    
+    <!-- Bootstrap JS (optional) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    
+    <!-- External JavaScript -->
     <script src="game final.js"></script>
   </body>
-
 </html>
 
