@@ -336,7 +336,7 @@ Bedroom.description = "You enter a luxurious tatami room with a large futon and 
 Bedroom.character = Concubine 
 Bedroom.roomImage = bedroomImage
 const Hall = new Room("hall", "Language Tome");
-Hall.description = "You enter a large room with wooden beams and paper lamps with many doorways. <br/> <b>The door is closed behind you.</b>";
+Hall.description = "You enter a large room with wooden beams, paper lamps with many doorways. <br/> <b>The door is closed behind you.</b>";
 Hall.roomImage = hallImage
 const Hallway = new Room("throne room");
 Hallway.description = "a Samurai lunges towards you, but you block his attack and defeat him. <br/> Lucky you picked up that sword!";
@@ -487,6 +487,7 @@ function handleInteraction(command, room) {
   if (action === "take") {
     const item = room._item;
   
+    
     if (item && item.name.toLowerCase() === itemName.toLowerCase()) {
       // Check if the required item matches and set it in the inventory
       if (
@@ -508,7 +509,7 @@ function handleInteraction(command, room) {
         }
         if (room.name === "time machine" && itemName === "language tome") {
           // Update the description of SamuraiDeath when the player takes the Sword
-          Samurai.conversation = "You must be the monk we've been expecting...Your clothes are strange, though...";
+          Samurai.conversation = "You must be the Christian monk we've been expecting...Weird clothes...Uh, Tono-sama will receive you now...";
         }
       if (itemName === "tea pot") {
         room.description =
